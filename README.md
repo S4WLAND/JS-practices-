@@ -1,14 +1,2 @@
 # Practicas-JS
 no available 
-no available
-no available
-no available
-no available
-no available
-no available
-no available
-no available
-no available
-no available
-no available
-no available
