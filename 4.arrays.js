@@ -38,12 +38,43 @@ console.log(numeros);
 	1 - elimina todo en adelante desde dicha pocicion
 
 */
-numeros.splice(2, 0, 22);
+numeros.splice(2, 0, 22); // - se pueden colocar barios elementos  ej: (2, 0, 22, 23, 24, 25)
 console.log(numeros);
 numeros.splice(0, 1);
 console.log(numeros);
 numeros.splice(5);
 console.log(numeros);
+let nuevos_numeros = numeros.slice(2, 5); //crea una copia del array desde un indice a otro(2, 5)
+console.log(nuevos_numeros);
+
+
+// metodos arrays
+
+
+let word1 = "hola mundo";
+console.log(Array.from(word1)); // convierte cadena en array
+console.log(word1.split('')); // vuelve cadena en array en funcion de un separador
+lista = ['t', 's', 'e', 'y', 'f', 'a', 'r', 'v', 'b',];
+lista2 = [3, 4, 6, 7, 23, 45, 42, 1, 7, 8, 4];
+// organiza una array valor unicode, alfabeticamente numericamente
+console.log(lista.sort()); 
+// algoritmo para ordenar de forma acendente los numero numero a - numero b
+// para determinar cual es menor que cual y asi ordenar
+console.log(lista2.sort((a, b) => a - b)); 
+// recorre un array como lo hace un for in
+const numbers = [12, 25, 84, 98 ];
+numbers.forEach((number, index) => console.log(number));
+// comprueva si elemento cumple la condicion
+const words =  ['HTML', 'CSS', 'JAVASCRIPT', 'PHP'];
+console.log(words.some(word => word.length > 10));
+// comprueva si todos los elementos cumple la condicion
+console.log(words.every(word => word.length > 3));
+// trasfroma  todo elemeto de array y devuevle otro array
+const numbers2 = numbers.map(number => number*2);
+console.log(numbers2);
+
+
+
 
 
 
