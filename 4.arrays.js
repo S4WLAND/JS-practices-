@@ -4,7 +4,7 @@ let numero = 4;
 console.log(numeros[4] + numeros[4]); // indice de array
 console.log(`${palabras[1]} tiene ${palabras[1].length} letras`); //metodo de array que cuenta sus elementos
 console.log(numeros.length);
-console.log(Array.isArray(numero)); //para berificar si es o no array
+console.log(Array.isArray(numero)); //para verificar si es o no array
 console.log(numeros);
 numeros.shift(); // elimina el primer elemento
 console.log(numeros);
@@ -72,9 +72,3 @@ console.log(words.every(word => word.length > 3));
 // trasfroma  todo elemeto de array y devuevle otro array
 const numbers2 = numbers.map(number => number*2);
 console.log(numbers2);
-
-
-
-
-
-

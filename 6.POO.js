@@ -28,7 +28,7 @@ for (const son of person.sons) {
 	console.log(son);
 
 }
-
+// LLAMADA ENTRE ESTRUCTURAS DE DATOS
 console.log(person.sons[3].n3[2]);
 
 // funcion normal 
@@ -77,3 +77,54 @@ console.log(juan.apellido);
 // acceder a metodo
 console.log(juan.saludar());
 console.log(marta.saludar());
+
+const numbers = [-12, 2, 3, 23, 43, 2, 3];
+// (...) expande el conetenido de un array
+// expacion diseneda para estraccion individual de datos
+console.log(...numbers);
+
+const addnumbers = (a, b, c) => {
+	console.log(a+b+c);
+};
+
+addnumbers(1, 2, 3);
+// array a eviar valores a funcion a, b, c
+let numberToAdd = [1, 2, 3];
+// expande el array y manda los valores a la funcion de forma separada
+addnumbers(...numberToAdd);
+
+let user = ["javier", "david", "rosa", "juan", "mercedes"];
+let newUsers = ["marta", "jaime", "laura"];
+user.push(...newUsers);
+console.log(user);
+user.splice(5, 0, ...newUsers);
+console.log(user);
+let arr1 = [1, 2, 3, 4];
+let arr2 = [arr1, "str", true];
+console.log(arr2);
+// copia los objetos del array mas no la estructura del array en si
+let arr3 = [...arr1, "str", true];
+console.log(arr3);
+// concatenar array 
+let arrConcat1 = arr1.concat(arr2);
+console.log(arrConcat1);
+// las dos opciones hacen lo mismo
+// pero esta segunda es mas optima
+let arrConcat2 = [...arr1, ...arr2];
+console.log(arrConcat2);
+
+// parametros REST
+
+const restParams = (...petition) => {
+	console.log(petition);
+	return petition;
+};
+// math - valor mas alto y mas bajo
+
+petition_1 = restParams(1, 2, 3, 4, 2, 5, 6, 7, 8);
+console.log(petition_1);
+console.log(Math.max(...petition_1));
+console.log(Math.min(...petition_1));
+
+//eliminar elemento duplicado -- 2 en este caso
+console.log([...new Set(petition_1)]);
