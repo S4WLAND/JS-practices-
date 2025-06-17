@@ -1,6 +1,6 @@
-# 🌐 S4WLAND – JavaScript Practice & DOM Exploration
+# 🌐 JavaScript Practice & DOM Exploration
 
-S4WLAND is a personal project where I explored the fundamentals of JavaScript and started working with the DOM. It began as a collection of small experiments and evolved into a space to understand how JavaScript really works — from basic syntax to browser interaction.
+This is a personal project where I explored the fundamentals of JavaScript and started working with the DOM. It began as a collection of small experiments and evolved into a space to understand how JavaScript really works — from basic syntax to browser interaction.
 
 ---
 
